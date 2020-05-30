@@ -1,0 +1,50 @@
+// Product overwrites
+.macbook {
+    .product-header {
+        border-right: solid 100px #000;
+        position: relative;
+    }
+    .product-details {
+        background: #000;
+    }
+    .product-tagline {
+        color: #fff;
+    }
+    .product-image-container {
+        background-size: cover;
+        background-position: center;
+    }
+    .link {
+        color: $color-text;
+        &:visited {
+            color: $color-text;
+        }
+        &.active {
+            color: #fff;
+        }
+    }
+    .product-pricing {
+        justify-content: flex-start;
+        flex-basis: 342px;
+    }
+    .buy-now {
+        color: $color-link;
+    }
+    .footer-image {
+        width: 674px;
+        height: 281px;
+        background-position: bottom;
+    }
+}
+
+
+.watch {
+    .image-wrapper {
+        max-width: 672px;
+    }
+}
+
+// Animations -- move to own file
+.product-name-apear {
+    margin-left: -100%;
+}

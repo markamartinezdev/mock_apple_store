@@ -1,0 +1,12 @@
+// Colors
+$color-primary: #5AC8FA !default;
+$color-secondary: #F2F2F2 !default;
+$color-accent: #FF3B30 !default;
+$color-text: #707070 !default;
+$color-text-alt: #CCCCCC !default;
+$color-link: $color-primary !default;
+
+$background-gradient: linear-gradient($color-primary, $color-secondary 55%) !default;
+
+// Fonts
+$font-family: 'Poppins', sans-serif

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/icons/icomoon.eot') format('embedded-opentype'),
+         url('../fonts/icons/icomoon.woff') format('woff'),
+         url('../fonts/icons/icomoon.ttf') format('truetype'),
+         url('../fonts/icons/icomoon.svg') format('svg');
+  }
+
+  .icon {
+      &:before {
+          font-family: icons;
+      }
+      &.logo {
+        &:before {
+            content: "\e903"
+        }
+    }
+      &.iphone {
+          &:before {
+              content: "\e902"
+          }
+      }
+      &.macbook {
+            &:before {
+                content: "\e901"
+            }
+        }
+        &.watch {
+            &:before {
+                content: "\e900"
+            }
+        }
+  }

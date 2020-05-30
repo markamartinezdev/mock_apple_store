@@ -1,0 +1,51 @@
+// Generic utl
+.body-content {
+    flex: 1;
+}
+
+.gradient-background {
+    background: $background-gradient;
+}
+
+.logo-background {
+    background: transparent linear-gradient(90deg, #F2F2F2 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+    .icon {
+        color: #CCCCCC;
+        font-size: 180px;
+        right: 20px;
+        margin: auto;
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0.4;
+    }
+}
+
+.center-content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+// Use to makes text unselctable by the user
+.no-select {
+    user-select: none;
+}
+
+// For nav links
+.link {
+    color: $color-text-alt;
+    user-select: none;
+    &:visited{
+        color: $color-text-alt;
+    }
+    &:hover {
+        color: $color-primary;
+    }
+    &.active {
+        color: $color-text;
+        pointer-events: none;
+    }
+}

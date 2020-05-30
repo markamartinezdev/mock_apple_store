@@ -1,0 +1,30 @@
+// Forms
+.form {
+    &-input {
+        color: $color-text-alt;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid $color-text;
+        padding: 17px 32px;
+        min-width: 410px;
+    }
+    &-submit {
+        color: #fff;
+        display: block;
+        background: #000;
+        border: none;
+        margin: 0 auto;
+        font: bold 14px/21px $font-family;
+        letter-spacing: 0;
+        padding: 10px;
+
+    }
+    &-content{
+        margin-top: 25px;
+    }
+    &-label {
+        display: block;
+        color: #000;
+        font: 400 16px/16px 'poppins';
+        margin-bottom: 10px;
+    }
+}
