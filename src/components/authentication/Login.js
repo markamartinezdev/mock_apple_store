@@ -5,6 +5,10 @@ import { connect } from 'react-redux'
 // Acitons
 import { setActiveUser } from '../../store/actions'
 
+// Components
+import FormInput from '../forms/FormInput'
+import FormButton from '../forms/FormButton'
+
 class Login extends Component {
     state = {
         email: '',
@@ -41,17 +45,9 @@ class Login extends Component {
             <div className="login">
                 <div className="heading-text">Sign-In</div>
                 <div className="form">
-                    <div className="form-content">
-                        <label className="form-label">Email</label>
-                        <input className="form-input" type="email" onChange={this.updateEmail}></input>
-                    </div>
-                    <div className="form-content">
-                        <label className="form-label">Password</label>
-                        <input className="form-input" name='password' type="password" onChange={this.updatePassword}></input>
-                    </div>
-                    <button className="form-submit" onClick={this.logInUser}>
-                        Sign-in
-                    </button>
+                    <FormInput label="Email" onChange={this.updateEmail} placeHolder="user@email.com"/>
+                    <FormInput label="Password" onChange={this.updatePassword} placeHolder="password" type="password"/>
+                    <FormButton text="Sign-in" onClick={this.logInUser}/>
                 </div>
                 <div className="prompt right">
                     <span>Not registered? </span>

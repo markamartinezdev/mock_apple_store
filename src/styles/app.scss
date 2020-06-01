@@ -95,6 +95,9 @@ a {
     padding: 50px;
     border: 1px solid #F2F2F2;
     position: relative;
+    width: 100%;
+    margin: 10px;
+    max-width: 510px;
     .heading-text {
         font: bold 36px/55px $font-family;
         text-align: center;
@@ -173,16 +176,19 @@ a {
     &-name {
         color: $color-accent;
         font: bold 32px/48px $font-family;
+        transition: all ease 0.4s;
     }
     &-tagline {
         font: bold 100px/110px $font-family;
         max-width: 800px;
+        transition: all ease .4s;
     }
     &-description {
         font: normal 25px/35px $font-family;
         margin-top: 50px;
         color: #999999;
         max-width: 800px;
+        transition: all ease 0.4s;
     }
     &-image {
         width: 100%;
@@ -192,11 +198,14 @@ a {
             justify-content: center;
             align-items: flex-start;
             position: relative;
+            transition: all ease 0.4s;
         }
         &-floater {
             position: absolute;
             width: 100%;
-            max-width: 330px;;
+            right: 10%;
+            max-width: 330px;
+            transition: all ease 0.4s;
         }
     }
     &-footer {
@@ -217,6 +226,7 @@ a {
 .ship-date {
     font: normal 14px/35px $font-family;
     color: $color-accent;
+    transition: all ease .4s;
 }
 
 // Product spec
@@ -361,4 +371,7 @@ a {
 }
 
 @import './product-overwrites';
+
+
+@import './-animations.scss'
 

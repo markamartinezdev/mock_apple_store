@@ -10,7 +10,6 @@ import { useSelector } from 'react-redux'
 
 export default ({ children, ...rest }) => {
   const activeUser = Object.keys(useSelector(state => state.activeUser)).length
-  console.log(activeUser)
     return (
       <Route
         {...rest}
@@ -27,5 +26,5 @@ export default ({ children, ...rest }) => {
           )
         }
       />
-    );
+    )
   }

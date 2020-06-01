@@ -1,0 +1,22 @@
+.iphone {
+    &-appear {
+        .product-tagline, .product-name, .product-description, .ship-date {
+            margin-left: -100%;
+            opacity: 0;
+        }
+        .product-image-floater {
+            right: -120%;
+            opacity: 1;
+        }
+        &-done {
+            .product-tagline, .product-name, .product-description, .ship-date  {
+                margin-left: 0;
+                opacity: 1;
+            }
+            .product-image-floater {
+                right: 10%;
+                opacity: 1;
+            }
+        }
+    } 
+}

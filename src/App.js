@@ -7,6 +7,8 @@ import {
 
 import { useDispatch, useSelector } from 'react-redux'
 
+import { CSSTransition } from "react-transition-group";
+
 // Actions 
 import { setActiveUser } from './store/actions'
 
@@ -24,8 +26,6 @@ import Watch from './pages/products/Watch'
 // Componets
 import Header from './components/Header'
 import PrivateRoute from './components/PrivateRoute'
-
-
 
 const App = () => {
     const Dispatch = useDispatch()
@@ -56,17 +56,19 @@ const App = () => {
                 <Register/>
             </Route>
 
-            <Route path="/watch">
-                <Watch/>
-            </Route>
+            <PrivateRoute path="/watch">
+                    <Watch/>
+            </PrivateRoute>
 
-            <Route path="/macbook">
+            <PrivateRoute path="/macbook">
                 <Macbook/>
-            </Route>
+            </PrivateRoute>
 
-            <Route path="/iphone">
-                <Iphone/>
-            </Route>
+            <PrivateRoute path="/iphone">
+                <CSSTransition appear in classNames="iphone" timeout={100}>
+                    <Iphone/>
+                </CSSTransition>
+            </PrivateRoute>
         </Switch>
     </Router>
     )
