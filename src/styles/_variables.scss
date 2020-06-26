@@ -13,17 +13,17 @@ $font-family: 'Poppins', sans-serif;
 
 // Break Points
 @mixin small {
-    @media screen and (max-width: 760){
+    @media screen and (max-width: 760px){
         @content;
     }
 }
 @mixin medium {
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 1070px) {
         @content;
         }
 }
 @mixin large {
-    @media only screen and (min-width: 1281px) {
+    @media only screen and (min-width: 1070px) {
         @content;
       }
 }

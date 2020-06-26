@@ -39,10 +39,15 @@
 
 
 .watch {
-    .image-wrapper {
-        max-width: 672px;
-        transition: all ease 0.4s;
+  .image-wrapper {
+      max-width: 672px;
+      transition: all ease 0.4s;
+  }
+  .product-image-container {
+    @include small {
+      display: inline-block;
     }
+  }
 }
 
 // Animations -- move to own file

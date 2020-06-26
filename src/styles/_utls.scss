@@ -2,6 +2,9 @@
 .body-content {
     flex: 1;
     overflow: hidden;
+    @include small {
+      overflow: auto;
+    }
 }
 
 .gradient-background {

@@ -10,36 +10,70 @@
         background: #000;
         color: #fff;
         font-size: 40px;
+        @include small {
+          font-size: 1.5em;
+          width: auto;
+          height: 100%;
+          padding: 10px;
+        }
     }
 }
 .nav {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0;
+  justify-content: flex-end;
+  padding: 10px;
+  @include large {
     align-items: flex-end;
-    justify-content: flex-end;
-    flex: 1 0;
     padding: 20px 100px;
-    .nav-link {
-        font: bold 20px/30px $font-family;
-        margin: 0 25px;
-        cursor: pointer;
-        color: $color-text;
-        &:hover {
-            color: $color-primary;
-        }
-        &.active {
-            color: #000;
-        }
+  }
+  @include small {
+    justify-content: center;
+  }
+  .nav-link {
+    font: bold 20px/30px $font-family;
+    margin: 0 25px;
+    cursor: pointer;
+    color: $color-text;
+    &:hover {
+        color: $color-primary;
     }
-    .notify {
-        color: #fff;
-        min-width: 154px;
-        border-radius: 23px;
-        text-align: center;
-        background-color: $color-primary;
-        margin-right: 0;
-        &:hover {
-            background-color: #000 ;
-            color: $color-secondary;
-        }
+    &.active {
+        color: #000;
     }
+  }
+  .notify {
+      color: #fff;
+      min-width: 154px;
+      border-radius: 23px;
+      text-align: center;
+      background-color: $color-primary;
+      margin-right: 0;
+      &:hover {
+          background-color: #000 ;
+          color: $color-secondary;
+      }
+      @include small {
+        display: none;
+      }
+  }
+  .text-link {
+    display: none;
+    @include large {
+      display: inline-block;
+    }
+  }
+  .icon-link {
+    .icon {
+      display:flex;
+    }
+    .icon:before {
+      font-size: 1.5em;
+    }
+    @include large {
+      display: none;
+    }
+  }
 }

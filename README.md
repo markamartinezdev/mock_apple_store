@@ -1,3 +1,7 @@
+## Notes:
+- run chrome with no cores. pulling form supplied endpoint gives cors errors if you dont do so. 
+- to create a account, you need to put in at least threecharacters for password, email and user name. Any will do
+
 ### 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
