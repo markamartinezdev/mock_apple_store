@@ -1,6 +1,6 @@
-## Notes:
-- run chrome with no cores. pulling form supplied endpoint gives cors errors if you dont do so. 
-- to create a account, you need to put in at least threecharacters for password, email and user name. Any will do
+## Notes when running locally:
+- run chrome with no cores. pulling form supplied endpoint gives cors errors if you don't do so. 
+- to create a account, you need to put in at least three characters for password, email and user name. Any will do
 
 ### 
 
