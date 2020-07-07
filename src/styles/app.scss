@@ -275,6 +275,7 @@ a {
         height: 100%;
         cursor: default;
         z-index: 1;
+        transition: all ease 0.4s;
         &.right {
             margin-left: 50%;
         }
@@ -284,6 +285,7 @@ a {
   &-option {
     margin: 0 18px;
     cursor: pointer;
+    transition: all ease 0.4s;
     &.active {
       opacity: 0.3;
       cursor: default;

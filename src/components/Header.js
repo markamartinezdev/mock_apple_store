@@ -11,11 +11,9 @@ class Header extends Component {
         <Link to="/"><i className="icon logo"></i></Link>
         <nav className="nav">
           <Link to="/iphone" className={`text-link nav-link ${this.props.location.pathname === '/iphone'? 'active': ''}`}> iPhone</Link>
-          <Link to="/macbook" className={`text-link text nav-link ${this.props.location.pathname === '/macbook' ? 'active': ''}`}>MacBook Pro</Link>
           <Link to="/watch" className={`text-link nav-link ${this.props.location.pathname === '/watch' ? 'active': ''}`}>Watch</Link>
         
           <Link className="nav-link icon-link link" to="/iphone"><i className="icon iphone"></i></Link>
-          <Link className="nav-link icon-link link" to="/macbook"><i className="icon macbook"></i></Link>
           <Link className="nav-link icon-link link" to="/watch"><i className="icon watch"></i></Link>
      
           <div className="nav-link notify">Notify me</div>
